@@ -17,3 +17,8 @@ def validate_year(year):
     else:
         b=True
     return b
+def create_test_file(name,year,month):
+    with open('Filedz.txt', 'w',encoding='utf-8') as file:
+        file.write(name + '\n')
+        file.write(year + '\n')
+        file.write(month + '\n')
