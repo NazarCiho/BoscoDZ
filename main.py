@@ -22,3 +22,13 @@ def create_test_file(name,year,month):
         file.write(name + '\n')
         file.write(year + '\n')
         file.write(month + '\n')
+def main():
+    name,month,year=get_user_input()
+    a=validate_month(month)
+    if a==True:
+        return
+    b=validate_year(year)
+    if b==True:
+        return
+    create_test_file(name,year,month)
+main()
