@@ -13,12 +13,15 @@ def change():
     root.title(f'{x} Clicks')
     if x % 2 == 0:
         btn.config(text='CLICK')
+        lab.config(text='QWERTY')
     else:
         btn.config(text='CLICKED')
+        lab.config(text='YTREWQ')
     x += 1
-
+lab=Label(text='QWERTY', font=(None,25) ,width=10, height=1, relief='solid')
+lab.pack(pady=20)
 btn = Button(text='CLICK', font=(None, 40), command=change, bg='Lime', relief='groove', width=8, height=2)
-btn.pack(pady=30)
+btn.pack()
 
 root.mainloop()
 
