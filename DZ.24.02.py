@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
-import random, time
+import random
 root=Tk()
 root.geometry('400x300+600+300')
 root.title('Вгадай число')
